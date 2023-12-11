@@ -1,0 +1,87 @@
+<html>
+    <body>
+        <head>
+            <title> Awpk1's Tools </title>
+        </head>
+        <h1> Awpk1 Site Prototype Version 1.0 </h1>
+        
+        <br>
+        <br>
+
+        <button>Click here</button>
+            <script>
+                var urlObj = new window.URL(window.location.href);
+    var url = "https://bacadotcom.hop.sh/";
+ 
+    if (url) {
+        var win;
+ 
+        document.querySelector('button').onclick = function() {
+            if (win) {
+                win.focus();
+            } 
+            else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('button').style.background='#007fff';
+            document.querySelector('button').innerHTML="Launched";
+        };
+    }
+            </script>
+        <style>
+            button {
+    font-family: 'Courier New', Courier, monospace;
+    background: skyblue;
+    border-radius: 12px;
+    border-color: skyblue;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    position: sticky;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 200;
+
+    
+}
+
+button:hover {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 200;
+    
+}
+
+body {
+    background: linear-gradient(deepskyblue, skyblue);
+}
+
+        </style>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    <h1> This site will soon be to change whenever i think of changing it! This is merely a prototype and more may be added! The html file is also pretty damn small c:</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1> PS: To the little goober i stole the about blank tab cloaker from, I credit you!</h1>
+    </body>
+</html>
